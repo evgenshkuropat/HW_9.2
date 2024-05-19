@@ -38,6 +38,8 @@ body{
 
 /* Header styles */
 .header__top{
+    width: 100%;
+    margin: 0 auto;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -51,8 +53,10 @@ body{
 }
 
 .header__center{
+    width: 100%;
     height: 130px;
     display: flex;
+    margin: 0 auto;
     justify-content: space-around;
     align-items: center;
     background-color: white;
@@ -72,7 +76,9 @@ body{
 }
 
 .header_bottom {
+    width: 100%;
     height: 80px;
+    margin: 0 auto;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -89,13 +95,17 @@ body{
 
 /* Main styles */
 .sale__top{
+    width: 100%;
+    margin: 0 auto;
     height: 600px;
     background-image: url("../assets/images/title.png");
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 410px;
+    padding-left: 400px;
 }
 
 .sale__group{
@@ -169,30 +179,37 @@ body{
     align-items: center;
 }
 
-.left__block{
+.left__block, .right__block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     color: white;
-}
-
-.left__block h2,
-.left__block p {
     text-align: left;
 }
 
-.left__block h2{
+.left__block h2,
+.left__block p,
+.right__block h2,
+.right__block p {
+    text-align: left;
+    margin-left: 0;
+}
+
+.left__block h2,
+.right__block h2 {
     font-size: 18px;
     font-weight: bold;
 }
 
-.left__block p{
+.left__block p,
+.right__block p {
     font-size: 14px;
 }
 
-.left__block input{
+.left__block input,
+.right__block input {
     width: 225px;
     height: 35px;
     border-radius: 30px;
@@ -209,7 +226,7 @@ body{
 }
 
 .impuls__block{
-    max-width: 1090px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
